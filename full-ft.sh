@@ -1,0 +1,19 @@
+deepspeed --include localhost:0,1,2,3 --master_port=9901 src/train_bash.py \
+  --stage sft \
+  --do_train \
+  --model_name_or_path /model_path/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T \
+  --dataset AVLLM_train \
+  --template default \
+  --finetuning_type full \
+  --output_dir /model_output/AVLLM \
+  --overwrite_cache \
+  --per_device_train_batch_size 16 \
+  --gradient_accumulation_steps 1 \
+  --lr_scheduler_type cosine \
+  --logging_steps 5 \
+  --save_steps 500 \
+  --learning_rate 5e-5 \
+  --num_train_epochs 8 \
+  --plot_loss \
+  --bf16 \
+  --deepspeed deepspeed.json
