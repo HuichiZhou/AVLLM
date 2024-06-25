@@ -1,6 +1,7 @@
 import csv
 import json
 
+
 file_path = 'attack_example.csv'
 
 processed_data = []

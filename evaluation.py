@@ -1,6 +1,7 @@
 import pandas as pd
 import json
 
+
 file_path = 'attack_example.csv'
 
 data = pd.read_csv(file_path)

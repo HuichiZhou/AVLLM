@@ -5,6 +5,7 @@ import os
 from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig
 from argparse import ArgumentParser
 
+
 parser = ArgumentParser()
 parser.add_argument('--device', type=int, default=2)
 parser.add_argument('--model_path', type=str, default='model_path')

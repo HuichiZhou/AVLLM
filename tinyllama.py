@@ -4,6 +4,7 @@ import re
 from textattack.constraints import Constraint
 from textattack.shared import utils
 
+
 class Tinyllama(Constraint):
     def __init__(
         self,
