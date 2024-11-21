@@ -1,4 +1,14 @@
-# AVLLM
+##  Evaluating the Validity of Word-level Adversarial Attacks with Large Language Models
+
+<h5 align=center>
+
+[![Paper](https://aclanthology.org/images/acl-logo.svg)](https://aclanthology.org/2024.findings-acl.292/)
+
+
+</h5>
+
+
+## AVLLM
 
 This guide provides detailed steps for fully fine-tuning the AVLLM model using the LLaMA Factory framework.   
 Follow these instructions to set up your environment, prepare your model and datasets, and perform fine-tuning and evaluations.
@@ -107,3 +117,17 @@ Follow these instructions to set up your environment, prepare your model and dat
    ```python
    sh patch.sh  
    ```
+
+## 📝 Citation
+
+If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
+
+```
+@inproceedings{zhou2024evaluating,
+  title={Evaluating the validity of word-level adversarial attacks with large language models},
+  author={Zhou, Huichi and Wang, Zhaoyang and Wang, Hongtao and Chen, Dongping and Mu, Wenhan and Zhang, Fangyuan},
+  booktitle={Findings of the Association for Computational Linguistics ACL 2024},
+  pages={4902--4922},
+  year={2024}
+}
+```
